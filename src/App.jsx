@@ -1,15 +1,13 @@
 import HomeScreen from "./components/Home/HomeScreen";
 
-
-
 const App = () => {
 
   return (
     <div className='container'>
 
-<>
-<HomeScreen/>
-</>
+      <>
+        <HomeScreen/>
+      </>
 
     </div>
   )
