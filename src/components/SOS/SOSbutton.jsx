@@ -4,7 +4,7 @@ import logo from "./Btn.png";
 const SOSButton = () => {
 
     return (
-      <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
+      <div className="flex">
         {/* Animated Outer Rings */}
         {/* <div className="absolute w-40 h-40 rounded-full border-4 border-red-600 animate-pulse"></div>
         <div className="absolute w-36 h-36 rounded-full border-4 border-red-600 animate-ping"></div> */}
