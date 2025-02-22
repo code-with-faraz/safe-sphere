@@ -5,7 +5,7 @@ const App = () => {
   const user = true;
 
   return (
-    <div className="container">
+    <div className="container w-[80vw] h-[80vh] bg-[#00000080] flex gap-4">
       {user ? (
         <>
           <HomeScreen />
