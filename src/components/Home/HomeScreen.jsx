@@ -4,7 +4,7 @@ import BottomSection from "../SOS/BottomSection";
 
 const HomeScreen = () => {
   return (
-    <div className="flex flex-col items-center justify-between h-scree w-full overflow-hidden">
+    <div className="flex flex-col items-center justify-between h-screen w-full overflow-hidden">
       <TopSection />
       <SOSButton />
       <BottomSection />
