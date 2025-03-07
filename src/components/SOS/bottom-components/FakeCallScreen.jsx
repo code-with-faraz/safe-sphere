@@ -74,7 +74,7 @@ const FakeCallScreen = () => {
                             📞
                         </button>
                         <button 
-                            className="bg-red-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
+                            className="bg-gray-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
                             onClick={handleEndCall}
                         >
                             ❌

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 
 function FakeCall() {
     const [isModalOpen, setIsModalOpen] = useState(false);
