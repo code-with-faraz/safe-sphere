@@ -54,30 +54,33 @@ const FakeCallScreen = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-black text-white relative">
+        <div className="relative top-0 flex flex-col items-center justify-center h-full w-full text-white rounded-md">
             {/* Blurred Background */}
-            <div className="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-md"></div>
+            <div className="absolute inset-0 bg-blue/80 backdrop-blur-sm bg-opacity-70 rounded-md"></div>
 
             {/* Call UI */}
-            <div className="relative flex flex-col items-center">
+            <div className="relative flex flex-col items-center gap-20">
                 <img src={callerInfo[caller].avatar} alt="Caller" className="w-24 h-24 rounded-full border-4 border-gray-500 shadow-lg" />
-                <h1 className="text-2xl font-semibold mt-3">{callerInfo[caller].name}</h1>
-                <p className="text-gray-400">{isRinging ? "Incoming Call..." : "Call in Progress"}</p>
+                
+                <div className="flex flex-col justify-center items-center">
+                    <h1 className="text-2xl font-semibold mt-3">{callerInfo[caller].name}</h1>
+                    <p className="text-gray-400">{isRinging ? "Incoming Call..." : "Call in Progress"}</p>
+                </div>
 
                 {/* Buttons */}
                 {isRinging ? (
-                    <div className="flex gap-6 mt-6">
+                    <div className="flex gap-20 mt-6">
                         <button 
-                            className="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
+                            className="text-xl bg-green-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
                             onClick={handleAnswer}
                         >
-                            📞
+                            <i class="fa-solid fa-phone"></i>
                         </button>
                         <button 
-                            className="bg-gray-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
+                            className="text-xl bg-red-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
                             onClick={handleEndCall}
                         >
-                            ❌
+                            <i class="fa-solid fa-phone-slash"></i>
                         </button>
                     </div>
                 ) : (

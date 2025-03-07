@@ -17,7 +17,7 @@ body {
 
 
 .container {
-  backdrop-filter: blur(4px) saturate(180%);  
+  backdrop-filter: blur(4px) saturate(180%);
   border-radius: 12px;
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
