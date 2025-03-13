@@ -35,9 +35,6 @@ const handleLogin = e => {
         <div className="item">
         <h2>Create an account</h2>
             <form>
-                <label htmlFor="file">
-                    <img src={avatar.url || "./avatar.png"} alt="" />
-                Upload an image</label>
                 <input type="file" id="file" style={{display:"none"}} onChange={handleAvatar}/>
                 <input type="text" placeholder="Username" name="username" />
                 <input type="text" placeholder="Email" name="email" />
