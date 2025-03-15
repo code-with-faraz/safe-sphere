@@ -35,11 +35,11 @@ function ChatForm({ chatHistory, setChatHistory, generateBotResponse }) {
             <input 
                 type="text" 
                 ref={inputRef}
-                className="massage-input border-none outline-none bg-none h-12 w-[100%] px-4 text-xl text-[#111] rounded-2xl" 
+                className="massage-input border-none outline-none bg-none h-12 w-[100%] px-4 text-sm text-[#111] rounded-2xl" 
                 placeholder="Message..." 
                 required />
             <button 
-                className="material-symbols-outlined h-9 w-9 text-2xl cursor-pointer text-[#fff] flex-shrink-0 mr-2 rounded-full bg-[#1570bf] hover:bg-[#153dbf] transition-all duration-200 ease-in-out">arrow_upward</button>
+                className="material-symbols-outlined h-9 w-9 text-xl cursor-pointer text-[#fff] flex-shrink-0 mr-2 rounded-full bg-[#1570bf] hover:bg-[#1553bf] transition-all duration-200 ease-in-out">arrow_upward</button>
         </form>
     );
 }
