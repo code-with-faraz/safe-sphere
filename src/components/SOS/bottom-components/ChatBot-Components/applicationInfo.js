@@ -1,3 +1,3 @@
-export const companyInfo =
+export const applicationInfo =
 `Introduction:
 `
