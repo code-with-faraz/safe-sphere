@@ -1,6 +1,6 @@
 .chat-body {
     scrollbar-width: thin;
-    scrollbar-color: #6d4fc2 transparent;
+    scrollbar-color: #1570bf transparent;
 }
 
 .chat-body .massage .massage-text {
@@ -52,6 +52,12 @@
 }
 
 .container.show-chatbot .chatbot-popup {
+    opacity: 1;
+    pointer-events: all;
+    /* transform: scale(1); */
+}
+
+.container.show-chatbot .chat-bg {
     opacity: 1;
     pointer-events: all;
     /* transform: scale(1); */
