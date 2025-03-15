@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import HomeScreen from "./components/Home/HomeScreen";
 import Login from "./components/login/Login";
-import Signup from "./components/login/signup";
-import UserInfo from "./components/user-info/UserInfo"; 
+import Signup from "./components/login/Signup";
+import UserInfo from "./components/UserInfo"; 
 import FakeCallScreen from "./components/SOS/bottom-components/FakeCallScreen";
 import { Toaster } from "sonner";
 
@@ -13,7 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/user-info" element={<UserInfo />} /> {/*UserInfo */}
+        <Route path="/user-info" element={<UserInfo />} /> {/* UserInfo */}
         <Route path="/" element={<HomeScreen />} />
         <Route path="/fake-call" element={<FakeCallScreen />} />
       </Routes>
@@ -22,3 +22,4 @@ const App = () => {
 };
 
 export default App;
+
