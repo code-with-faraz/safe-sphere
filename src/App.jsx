@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import HomeScreen from "./components/Home/HomeScreen";
 import Login from "./components/login/Login";
 import Signup from "./components/login/Signup";
-import UserInfo from "./components/UserInfo"; 
+import UserInfo from "./components/user-info/UserInfo"
 import FakeCallScreen from "./components/SOS/bottom-components/FakeCallScreen";
 import { Toaster } from "sonner";
 
