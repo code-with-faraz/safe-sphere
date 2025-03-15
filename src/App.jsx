@@ -13,6 +13,7 @@ const App = () => {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/fake-call" element={<FakeCallScreen />} />
         </Routes>
+        {/* <HomeScreen /> */}
     </div>
   );
 };

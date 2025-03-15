@@ -1,0 +1,73 @@
+.chat-body {
+    scrollbar-width: thin;
+    scrollbar-color: #6d4fc2 transparent;
+}
+
+.chat-body .massage .massage-text {
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.chat-body .bot-massage {   
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-body .bot-massage .massage-text {
+    background-color: #f6f2ff;
+    color: #111;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-end-end-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: none;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.chat-body .user-massage {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-body .user-massage .massage-text {
+    background-color: #1570bf;
+    color: #fff;
+    font-size: 18px;
+
+    border-start-start-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: none;
+}
+
+/* ChatBot Button Effect */
+
+.chatbot-popup {
+    transform-origin: bottom right;
+}
+
+.container.show-chatbot .chatbot-popup {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+}
+
+.show {
+    display: flex;
+    visibility: visible;
+}
+
+.not-show {
+    display: hidden;
+    visibility: hidden;
+    transform: rotate(90deg);
+}
+
+.error .massage-text {
+    color: red;
+}
