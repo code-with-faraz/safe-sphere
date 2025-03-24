@@ -27,7 +27,7 @@ function FakeCall() {
                         <button onClick={() => navigate('/fake-call?caller=anonymous')} className="block w-full py-3 px-5 bg-[#8a2be2] hover:bg-[#9b30ff] text-white rounded-tl-xl rounded-br-xl mb-2 hover:scale-105 transition-all duration-500 ease-in-out neon-glow">
                             📞 Unknown Caller
                         </button>
-                        <button onClick={() => navigate('/fake-call?caller=friend')} className="block w-full py-3 px-5 bg-[#32cd32] hover:bg-[#66ff66] text-white rounded-tl-xl rounded-br-xl mb-2 hover:scale-105 transition-all duration-500 ease-in-out neon-glow">
+                        <button onClick={() => navigate('/fake-call?caller=friend')} className="block w-full py-3 px-5 bg-[#ffcc00] hover:bg-[#ffd633] text-black rounded-tl-xl rounded-br-xl mb-2 hover:scale-105 transition-all duration-500 ease-in-out neon-glow">
                             👫 Friend
                         </button>
 

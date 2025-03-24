@@ -5,12 +5,14 @@ const audioFiles = {
     police: "/audio/police.mp3",
     family: "/audio/family.mp3",
     anonymous: "/audio/anonymous.mp3",
+    friend: "/audio/friend.mp3",
 };
 
 const callerInfo = {
     police: { name: "Police Department", avatar: "/images/police.png" },
     family: { name: "Mom", avatar: "/images/mom.png" },
     anonymous: { name: "Unknown Caller", avatar: "/images/unknown.png" },
+    friend: { name: "Best Friend", avatar: "/images/friend.png" },
 };
 
 const FakeCallScreen = () => {
@@ -74,13 +76,13 @@ const FakeCallScreen = () => {
                             className="text-xl bg-green-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
                             onClick={handleAnswer}
                         >
-                            <i class="fa-solid fa-phone"></i>
+                            <i className="fa-solid fa-phone"></i>
                         </button>
                         <button 
                             className="text-xl bg-red-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
                             onClick={handleEndCall}
                         >
-                            <i class="fa-solid fa-phone-slash"></i>
+                            <i className="fa-solid fa-phone-slash"></i>
                         </button>
                     </div>
                 ) : (
