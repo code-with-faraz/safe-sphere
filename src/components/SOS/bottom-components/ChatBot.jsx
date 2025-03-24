@@ -75,7 +75,7 @@ function ChatBot() {
         //     <i class="fa-solid fa-message text-xl sm:text-2xl"></i>
         // </botton>
 
-        <div className={`container font-[poppins] ${showChatBot ? "show-chatbot" : ""} flex justify-center items-center`}>
+        <div className={`container font-[poppins] ${showChatBot ? "show-chatbot" : ""} flex justify-center items-center rounded-xl`}>
 
             <button onClick={changeBtn} className="chatbot-toggler fixed border-none cursor-pointer bg-[#fff] hover:bg-[#d9d9d9] w-max text-[#1570bf] rounded-full flex items-center justify-center p-6 group active:scale-90">
                 {/* <span className={`material-symbols-outlined absolute text-[#fff] ${condition1} transition-all duration-200 ease-out`}>mode_comment</span> */}
@@ -86,8 +86,9 @@ function ChatBot() {
                 {/* <span className="absolute invisible group-hover:visible w-max bg-[#1570bf] text-[#d9d9d9] px-2 py-1 rounded-md text-xs top-2 group-hover:-top-9 left-1/2 -translate-x-1/2 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:rotate-45 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:-z-10 transition-all duration-150 ease-in-out">Chat Bot</span> */}
             </button>
 
-            <div className="chat-bg absolute opacity-0 pointer-events-none -bottom-10 h-screen w-max sm:w-[1280px] flex items-center justify-center bg-white/40 backdrop-blur-sm bg-opacity-50 rounded-md transition-all duration-100 ease-in">
-                <div className="chatbot-popup absolute opacity-0 pointer-events-none bottom-0 sm:bottom-4 left-1/2 -translate-x-1/2 w-[100%] sm:w-[60%] h-[100%] sm:h-max overflow-hidden bg-[#fff] rounded-none sm:rounded-lg shadow-lg transition-all duration-100 ease-in">
+            <div className="chat-bg absolute opacity-0 pointer-events-none -bottom-10 h-screen w-[700px] sm:w-[1480px] flex items-center justify-center bg-white/40 backdrop-blur-sm bg-opacity-50 rounded-xl transition-all duration-100 ease-in">
+                {/* ChatBot */}
+                    <div className="chatbot-popup absolute opacity-0 pointer-events-none bottom-0 md:bottom-4 left-1/2 -translate-x-1/2 w-[80vw] md:w-[60vw] h-[80vh] md:h-max overflow-hidden bg-[#fff] rounded-lg sm:rounded-lg shadow-lg transition-all duration-100 ease-in">
                     {/* ChatBox header  */}
                     <div className="chat-header flex px-4 sm:px-6 py-3 sm:py-4 items-center justify-between bg-[#1570bf]">
                         <div className="header-info flex gap-3 items-center">
@@ -117,7 +118,7 @@ function ChatBot() {
                     </div>
 
                     {/* Chat footer */}
-                    <div className="chat-footer absolute bottom-0 w-[100%] pt-4 px-6 pb-5 ">
+                    <div className="chat-footer absolute bottom-0 w-full pt-4 px-6 pb-5 ">
                         <ChatForm chatHistory={chatHistory} setChatHistory={setChatHistory} generateBotResponse={generateBotResponse} />
                     </div>
                 </div>
