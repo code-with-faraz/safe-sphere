@@ -36,10 +36,10 @@ function Location() {
 
     return (
         <div 
-            className="flex items-center gap-2 sm:gap-4 bg-[#d9d9d9] text-[#111] px-3 sm:px-4 py-2 rounded-md cursor-pointer" 
+            className="flex items-center gap-2 sm:gap-4 bg-[#d9d9d9] text-[#111] px-3 md:px-4 py-2 rounded-md cursor-pointer" 
             onClick={getLocation}
         >
-            <p className=" text-[#111] px-3 sm:px-4 py-2 rounded-md cursor-pointer">
+            <p className=" text-[#111] text-sm md:text-base text-center px-3 md:px-4 py-1 md:py-2 rounded-md cursor-pointer">
                 {loading ? "Fetching location..." : currentAddress}
             </p>
             <i className="fa-solid fa-location-crosshairs text-2xl sm:text-3xl active:scale-90"></i>
