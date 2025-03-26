@@ -9,7 +9,7 @@ import { Toaster } from "sonner";
 const App = () => {
   return (
     <div className="container w-[80vw] h-[80vh] bg-[#00000080] flex gap-4">
-      <Toaster position="top-center" richColors />
+      {/* <Toaster position="top-center" richColors /> */}
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

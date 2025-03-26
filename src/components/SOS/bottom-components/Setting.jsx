@@ -46,12 +46,17 @@ function Settings() {
 
             {/* Modal */}
             {isSettingsOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                    <div className="bg-[#111927] p-6 rounded-lg w-[350px] shadow-lg">
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 rounded-xl">
+                    <div className="bg-[#111927] p-6 rounded-lg w-[350px] shadow-lg relative">
                         {/* Modal Header */}
                         <div className="flex justify-between items-center mb-4">
                             <h2 className="text-xl font-semibold text-white">Settings</h2>
-                            <button onClick={() => setIsSettingsOpen(false)} className="text-white text-2xl">×</button>
+                            {/* <button onClick={() => setIsSettingsOpen(false)} className="text-white text-2xl">×</button> */}
+
+                        {/* Close Button */}
+                            <button onClick={() => setIsSettingsOpen(false)} type="button" title="close" className="close-btn bg-[#dfdfdf] hover:bg-[#e81022] w-6 h-6 absolute flex justify-center items-center rounded-full p-2 right-4 top-4 hover:rotate-90 duration-300 ease-in-out hover:scale-110 group neon-glow">
+                                <svg className="text-[#111] group-hover:text-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                            </button>
                         </div>
 
                         {/* Emergency Contacts Section */}
