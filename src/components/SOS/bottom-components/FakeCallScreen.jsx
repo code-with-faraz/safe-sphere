@@ -9,10 +9,10 @@ const audioFiles = {
 };
 
 const callerInfo = {
-    police: { name: "Police Department", avatar: "/images/police.png" },
-    family: { name: "Mom", avatar: "/images/mom.png" },
-    anonymous: { name: "Unknown Caller", avatar: "/images/unknown.png" },
-    friend: { name: "Best Friend", avatar: "/images/friend.png" },
+    police: { name: "Police Department", avatar: "/images/police.jpeg" },
+    family: { name: "Family", avatar: "/images/family.jpeg" },
+    anonymous: { name: "Unknown Caller", avatar: "/images/unknown.jpeg" },
+    friend: { name: "Best Friend", avatar: "/images/friend.jpeg" },
 };
 
 const FakeCallScreen = () => {
