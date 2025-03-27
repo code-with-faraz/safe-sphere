@@ -13,6 +13,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-x: hidden;
+
 }
 
 
@@ -20,5 +22,9 @@ body {
   backdrop-filter: blur(4px) saturate(180%);
   border-radius: 12px;
   border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+html {
+  overflow-x: hidden;
 }
 
