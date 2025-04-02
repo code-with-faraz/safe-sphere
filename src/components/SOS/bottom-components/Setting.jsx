@@ -46,11 +46,11 @@ function Settings() {
 
             {/* Modal */}
             {isSettingsOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 rounded-xl">
+                <div className="fixed inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm bg-opacity-50 z-50 rounded-xl">
                     <div className="bg-[#111927] p-6 rounded-lg w-[350px] shadow-lg relative">
                         {/* Modal Header */}
-                        <div className="flex justify-between items-center mb-4">
-                            <h2 className="text-xl font-semibold text-white">Settings</h2>
+                        <div className="flex justify-between items-center mb-2">
+                            <h2 className="text-2xl font-semibold text-white">Settings</h2>
                             {/* <button onClick={() => setIsSettingsOpen(false)} className="text-white text-2xl">×</button> */}
 
                         {/* Close Button */}
@@ -95,7 +95,7 @@ function Settings() {
 
                         {/* Save Button */}
                         <button 
-                            className="w-full py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                            className="w-full py-2 bg-[#1570bf] text-white rounded hover:bg-[#155fbf] transition-all duration-150 ease-in-out"
                             onClick={saveSettings}
                         >
                             Save Changes
