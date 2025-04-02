@@ -8,7 +8,7 @@ import { Toaster } from "sonner";
 
 const App = () => {
   return (
-    <div className="container w-[80vw] h-[80vh] bg-[#00000080] flex gap-4">
+    <div className="container w-[90vw] md:w-[80vw] h-[80vh] bg-[#00000080] flex gap-4">
       <div className="fixed top-0 right-0 z-50"> 
       <Toaster position="top-center" richColors />
       </div>
