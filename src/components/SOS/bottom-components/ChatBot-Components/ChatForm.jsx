@@ -31,11 +31,11 @@ function ChatForm({ chatHistory, setChatHistory, generateBotResponse }) {
     return (
         <form 
             onSubmit={handleFormSubmit}
-            className="chat-form flex items-center bg-[#fff] outline-[1px] outline-dashed outline-[#cccce5] rounded-2xl drop-shadow-lg focus-within:outline-[2px] focus-within:outline-[#1570bf] focus-within:outline-double">
+            className="chat-form flex items-center text-[#fff] bg-gray-800 outline-[1px] outline-dashed outline-[#cccce5] rounded-2xl drop-shadow-lg focus-within:outline-[2px] focus-within:outline-[#1570bf] focus-within:outline-double">
             <input 
                 type="text" 
                 ref={inputRef}
-                className="massage-input border-none outline-none bg-none h-10 w-[100%] px-4 text-sm text-[#111] rounded-2xl" 
+                className="massage-input border-none outline-none bg-none h-10 w-[100%] px-4 text-sm text-[#fff] rounded-2xl" 
                 placeholder="Message..." 
                 required />
             <button 
