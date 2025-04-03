@@ -40,19 +40,19 @@ function Settings() {
     return (
         <>
             {/* Gear Icon Button */}
-            <button className="flex items-center active:scale-90" onClick={() => setIsSettingsOpen(true)}>
+            <button className="flex items-center active:scale-90 group relative z-0" onClick={() => setIsSettingsOpen(true)}>
                 <i className="fa-solid fa-gear text-2xl sm:text-3xl text-[#fff] hover:text-[#d9d9d9]"></i>
 
-                {/* <span className="absolute invisible group-hover:visible w-max bg-[#d9d9d9] text-[#111926] px-2 py-1 rounded-md text-xs top-2 group-hover:-top-9 left-1/2 -translate-x-1/2 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:rotate-45 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:-z-10 transition-all duration-150 ease-in-out">Setting</span> */}
+                <span className="absolute invisible group-hover:visible w-max bg-[#d9d9d9] text-[#111926] px-2 py-1 rounded-md text-xs top-2 group-hover:-top-9 left-1/2 -translate-x-1/2 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:rotate-45 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:-z-10 transition-all duration-150 ease-in-out">Setting</span>
             </button>
 
             {/* Modal */}
             {isSettingsOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm bg-opacity-50 z-50 rounded-xl">
+                <div className="fixed inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm bg-opacity-50 z-10 rounded-xl">
                     <div className="bg-[#111927] p-6 rounded-lg w-[350px] shadow-lg relative">
                         {/* Modal Header */}
-                        <div className="flex justify-between items-center mb-2">
-                            <h2 className="text-2xl font-semibold text-white">Settings</h2>
+                        <div className="flex justify-between items-center mb-1">
+                            <h2 className="text-3xl font-semibold text-white">Settings</h2>
                             {/* <button onClick={() => setIsSettingsOpen(false)} className="text-white text-2xl">×</button> */}
 
                         {/* Close Button */}
