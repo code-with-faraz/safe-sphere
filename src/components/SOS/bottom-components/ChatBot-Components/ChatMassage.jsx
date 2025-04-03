@@ -1,6 +1,5 @@
 import './ChatBot-style.css';
 import roboticon from "./robot.png";
-import roboticonBlue from "./robot-blue.png";
 
 function ChatMassage({ chat }) {
 

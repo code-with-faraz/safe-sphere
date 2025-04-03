@@ -10,10 +10,10 @@ function FakeCall() {
 
     return (
         <div>
-            <button className="flex items-center active:scale-90 relative group" onClick={openModal}>
+            <button className="flex items-center active:scale-90" onClick={openModal}>
                 <i className="fa-solid fa-phone-volume text-2xl sm:text-3xl text-[#39ff14] neon-glow"></i>
 
-                <span className="absolute invisible group-hover:visible w-max bg-[#39ff14] text-[#111] px-2 py-1 rounded-md text-xs top-2 group-hover:-top-9 left-1/2 -translate-x-1/2 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:rotate-45 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:-z-10 transition-all duration-150 ease-in-out">Fake Call</span>
+                {/* <span className="absolute invisible group-hover:visible w-max bg-[#39ff14] text-[#111] px-2 py-1 rounded-md text-xs top-2 group-hover:-top-9 left-1/2 -translate-x-1/2 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:rotate-45 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:-z-10 transition-all duration-150 ease-in-out">Fake Call</span> */}
             </button>
 
             {isModalOpen && (

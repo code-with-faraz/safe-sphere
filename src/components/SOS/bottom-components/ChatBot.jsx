@@ -90,7 +90,7 @@ function ChatBot() {
 
             <div className="chat-bg absolute opacity-0 pointer-events-none -bottom-10 h-[80vh] w-[90vw] md:w-[80vw] flex items-center justify-center bg-black/60 backdrop-blur-sm bg-opacity-50 rounded-xl transition-all duration-100 ease-in">
                 {/* ChatBot */}
-                    <div className="chatbot-popup absolute opacity-0 pointer-events-none bottom-0 md:bottom-4 left-1/2 -translate-x-1/2 w-[90vw] md:w-[60vw] h-[80vh] md:h-max overflow-hidden bg-[#fff] rounded-xl md:rounded-lg shadow-lg transition-all duration-100 ease-in">
+                    <div className="chatbot-popup absolute opacity-0 pointer-events-none bottom-0 md:bottom-4 left-1/2 -translate-x-1/2 w-[90vw] md:w-[60vw] h-[80vh] md:h-max overflow-hidden bg-[#fff] rounded-xl md:rounded-lg shadow-lg transition-all duration-100 ease-in z-10">
                     {/* ChatBox header  */}
                     <div className="chat-header flex px-4 md:px-6 py-3 md:py-4 items-center justify-between bg-[#1570bf] rounded-t-xl md:rounded-t-none">
                         <div className="header-info flex gap-3 items-center">
