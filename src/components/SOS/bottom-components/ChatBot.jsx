@@ -3,7 +3,7 @@ import ChatMassage from "./ChatBot-Components/ChatMassage";
 import { useEffect, useRef, useState } from "react";
 import { applicationInfo } from "./ChatBot-Components/applicationInfo";
 import roboticon from "./ChatBot-Components/robot.png";
-import roboticonBlue from "./ChatBot-Components/robot-blue.png";
+import roboticonBlue from "./ChatBot-Components/robotblue.png";
 
 import './ChatBot-Components/ChatBot-style.css';
 
