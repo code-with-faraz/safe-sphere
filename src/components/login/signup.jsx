@@ -23,7 +23,7 @@ const Signup = () => {
     e.preventDefault();
     
     try {
-      const response = await fetch("http://localhost:5050/auth/signup", {
+      const response = await fetch("https://backend-sage-seven-61.vercel.app/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
