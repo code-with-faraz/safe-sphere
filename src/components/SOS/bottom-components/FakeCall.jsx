@@ -17,10 +17,10 @@ function FakeCall() {
             </button>
 
             {isModalOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black/70 backdrop-blur-md rounded-xl z-10">
+                <div className="fixed inset-0 flex items-center justify-center bg-black/70 backdrop-blur-md rounded-xl z-20">
                     <div className="bg-[#0f0f0f] relative py-12 px-16 rounded-lg shadow-lg text-[#39ff14] flex flex-col gap-4 neon-border">
-                        <h2 className="text-3xl text-center font-bold mb-4 text-[#fff] neon-text">Choose a Call Type</h2>
-                        <button onClick={() => navigate("/fake-call?caller=police")} className="block w-full py-3 px-5 bg-[#ff073a] hover:bg-[#ff4567] text-white rounded-tl-xl rounded-br-xl mb-2 hover:scale-105 transition-all duration-500 ease-in-out neon-glow">
+                        <h2 className="text-2xl sm:text-3xl text-center font-bold mb-4 text-[#fff] neon-text">Choose a Call Type</h2>
+                        <button onClick={() => navigate("/fake-call?caller=police")} className="block w-full py-3 px-3 sm:px-5 bg-[#ff073a] hover:bg-[#ff4567] text-white rounded-tl-xl rounded-br-xl mb-2 hover:scale-105 transition-all duration-500 ease-in-out neon-glow">
                             🚔 Police
                         </button>
                         <button onClick={() => navigate('/fake-call?caller=family')} className="block w-full py-3 px-5 bg-[#1e90ff] hover:bg-[#63b8ff] text-white rounded-tl-xl rounded-br-xl mb-2 hover:scale-105 transition-all duration-500 ease-in-out neon-glow">
