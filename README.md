@@ -15,8 +15,6 @@ Safe-Sphere is a web-based SOS application that enhances women’s safety by ena
 - 📤 Emergency Contact Management  
 - 🔔 Alert Notifications for quick response
 
-## SignUp/LogIn to access SafeSphere
-
 ## 🔗 Backend Repository  
 You can find the backend implementation of Safe-Sphere [here](https://github.com/code-with-faraz/backend).
 
