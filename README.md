@@ -2,7 +2,7 @@
 *A Women Safety SOS Application*
 
 ## 🚀 About the Project  
-Safe-Sphere is a web-based SOS application that enhances women’s safety by enabling fast emergency alerts, real-time location sharing, and notifying trusted contacts in critical situations.
+Safe-Sphere is a web-based SOS application that enhances women’s safety by enabling fast emergency alerts, real-time location sharing, and notifying trusted contacts in critical situations. Our goal is to create simple, reliable and accessible solution to enhance personal growth and security 
 
 ## 🛠️ Tech Stack  
 - **Frontend**: React.js, Tailwind CSS  
