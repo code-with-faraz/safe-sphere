@@ -1,22 +1,26 @@
 import Notification from "./top-components/Notification";
 import Location from "./top-components/Location";
 import Profile from "./top-components/Profile";
-import { useNavigate } from "react-router-dom";
-import { toast } from "sonner";
+// import { useNavigate } from "react-router-dom";
+// import { toast } from "sonner";
+
 function TopSection() {
-  const navigate = useNavigate();
-  function logout() {
-    localStorage.removeItem("token");
-    localStorage.removeItem("id");
-    toast.success("Logged off");
-    navigate("/login");
-  }
+  // const navigate = useNavigate();
+
+  // function logout() {
+  //   localStorage.removeItem("token");
+  //   localStorage.removeItem("id");
+  //   toast.success("Logged off");
+  //   navigate("/login");
+  // }
+
   return (
     <div className="flex items-center justify-center w-full px-4 py-2 gap-8 md:gap-12 mt-4">
       <Notification />
       <Location />
       <Profile />
 
+      {/* 
       <button
         onClick={logout}
         className="absolute right-3 md:right-10 group flex items-center justify-start w-6 md:w-11 h-6 md:h-11 bg-red-600 rounded-full cursor-pointer overflow-hidden transition-all duration-200 shadow-lg hover:w-24 md:hover:w-32 hover:rounded-lg active:translate-x-1 active:translate-y-1"
@@ -30,6 +34,7 @@ function TopSection() {
           Logout
         </div>
       </button>
+      */}
     </div>
   );
 }
