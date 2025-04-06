@@ -11,7 +11,7 @@ Safe-Sphere is a web-based SOS application that enhances women’s safety by ena
 
 ## 📌 Core Features  
 - 🆘 One-Tap SOS Alert to emergency contacts  
-- 📍 Live Location Sharing for real-time tracking  
+- 🤖 AI therapist chatbot for therapeutic conversations   
 - 📤 Emergency Contact Management  
 - 🔔 Alert Notifications for quick response
 
