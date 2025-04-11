@@ -104,7 +104,7 @@ function ChatBot() {
                     </div>
 
                     {/* Chat body */}
-                    <div ref={chatBotRef} className="chat-body h-[60vh] md:h-[72%] overflow-y-auto py-6 px-4 md:p-6 mb-16 flex flex-col gap-5 bg-gray-800">
+                    <div ref={chatBotRef} className="chat-body h-[62vh] md:h-[74%] overflow-y-auto py-6 px-4 md:p-6 mb-16 flex flex-col gap-5 bg-gray-800">
                         <div className="massage bot-massage flex gap-3 items-center">
                             {/* <ChatBotIcon className="fill-[#fff] bg-[#6d4fc2]" /> */}
                             {/* <img src={Boticon} alt="logo" className="w-10 h-10" /> */}
@@ -123,7 +123,7 @@ function ChatBot() {
                     </div>
 
                     {/* Chat footer */}
-                    <div className="chat-footer absolute bottom-0 w-full pt-4 px-6 pb-5 bg-gray-800">
+                    <div className="chat-footer absolute bottom-0 w-full py-3 px-3 md:px-6 bg-gray-800 rounded-b-2xl sm:rounded-b-md">
                         <ChatForm chatHistory={chatHistory} setChatHistory={setChatHistory} generateBotResponse={generateBotResponse} />
                     </div>
                 </div>

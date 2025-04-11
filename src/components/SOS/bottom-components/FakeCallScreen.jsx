@@ -62,7 +62,7 @@ const FakeCallScreen = () => {
 
             {/* Call UI */}
             <div className="relative flex flex-col items-center gap-20">
-                <img src={callerInfo[caller].avatar} alt="Caller" className="w-24 h-24 rounded-full border-4 border-gray-500 shadow-lg" />
+                <img src={callerInfo[caller].avatar} alt="Caller" className="w-24 h-24 rounded-full border-2 border-gray-500 shadow-lg" />
                 
                 <div className="flex flex-col justify-center items-center">
                     <h1 className="text-2xl font-semibold mt-3">{callerInfo[caller].name}</h1>
