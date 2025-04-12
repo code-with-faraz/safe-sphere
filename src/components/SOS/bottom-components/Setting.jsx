@@ -43,7 +43,7 @@ function Settings() {
             <button className="flex items-center active:scale-90 group relative z-0" onClick={() => setIsSettingsOpen(true)}>
                 <i className="fa-solid fa-gear text-2xl sm:text-3xl text-[#fff] hover:text-[#d9d9d9]"></i>
 
-                <span className="absolute invisible group-hover:visible w-max bg-[#d9d9d9] text-[#111926] px-2 py-1 rounded-md text-xs top-2 group-hover:-top-9 left-1/2 -translate-x-1/2 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:rotate-45 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:-z-10 transition-all duration-150 ease-in-out">Setting</span>
+                <span className="absolute invisible group-hover:visible w-max bg-[#d9d9d9] text-[#111926] px-2 py-1 rounded-md text-xs top-2 group-hover:-top-9 left-1/2 -translate-x-1/2 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:rotate-45 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:-z-10 transition-all duration-150 ease-in-out">Settings</span>
             </button>
 
             {/* Modal */}

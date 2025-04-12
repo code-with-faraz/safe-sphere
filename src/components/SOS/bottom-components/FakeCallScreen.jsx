@@ -73,13 +73,13 @@ const FakeCallScreen = () => {
                 {isRinging ? (
                     <div className="flex gap-20 mt-6">
                         <button 
-                            className="text-xl bg-green-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
+                            className="text-xl bg-green-500 w-16 h-16 hover:scale-105 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
                             onClick={handleAnswer}
                         >
                             <i className="fa-solid fa-phone"></i>
                         </button>
                         <button 
-                            className="text-xl bg-red-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
+                            className="text-xl bg-red-500 w-16 h-16 hover:scale-105 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform"
                             onClick={handleEndCall}
                         >
                             <i className="fa-solid fa-phone-slash"></i>

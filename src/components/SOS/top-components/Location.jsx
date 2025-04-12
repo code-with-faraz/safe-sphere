@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import './Location.css';
+
 function Location() {
     const [currentAddress, setCurrentAddress] = useState("Click to get location");
     const [loading, setLoading] = useState(false);
@@ -36,13 +38,13 @@ function Location() {
 
     return (
         <div 
-            className="flex items-center gap-2 md:gap-4 bg-[#d9d9d9] text-[#111] px-3 md:px-4 py-1.5 rounded-md cursor-pointer" 
+            className="location max-w-80 max-h-14 overflow-x-scroll overflow-y-hidden whitespace-nowrap [scrollbar-width:thin] flex items-center gap-2 md:gap-4 bg-[#d9d9d9] text-[#111] px-3 md:px-4 py-1 rounded-md cursor-pointer drop-shadow-xl" 
             onClick={getLocation}
         >
-            <p className=" text-[#111] text-sm md:text-base text-center px-3 md:px-4 py-1 md:py-2 rounded-md cursor-pointer">
+            <p className=" text-[#111] text-sm md:text-base text-center px-2 md:px-2 py-1 md:py-2 mt-1.5 rounded-md cursor-pointer">
                 {loading ? "Fetching location..." : currentAddress}
             </p>
-            <i className="fa-solid fa-location-crosshairs text-2xl sm:text-3xl active:scale-90"></i>
+            <i className="fa-solid fa-location-crosshairs text-2xl sm:text-3xl active:scale-90 mt-1.5"></i>
         </div>
     );
 }
